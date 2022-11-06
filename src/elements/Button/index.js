@@ -36,6 +36,7 @@ export default function Button(props) {
           className={className.join(" ")}
           style={props.style}
           rel={props.target === "_blank" ? "noopener noreferrer" : undefined}
+          target={props.target === "_blank" ? "_blank" : undefined}
         >
           {props.children}
         </a>
@@ -75,4 +76,5 @@ Button.propTypes = {
   isBlock: propTypes.bool,
   hasShadow: propTypes.bool,
   isExternal: propTypes.bool,
+  isPrimary: propTypes.bool,
 };
