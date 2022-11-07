@@ -6,6 +6,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "functions";
+@import "colorVariable";
 @import "variables";
 @import "mixins";
 @import "root";
@@ -199,4 +200,9 @@ section {
       }
     }
   }
+}
+
+.testimonial-hero, .testimonial-hero img{
+  width: 365px;
+  height: 500px;
 }

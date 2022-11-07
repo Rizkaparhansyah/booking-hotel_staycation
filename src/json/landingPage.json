@@ -171,6 +171,15 @@
         }
       ]
     }
-    ]
+    ],
+    "testimonial":{
+      "_id":"asd1293uasdads1",
+      "imageUrl": "/images/testimonial.jpg",
+      "name": "Happy Family",
+      "rate": 3.7,
+      "content": "What a great trip with my family and i should try again next time soon ...",
+      "familyName": "Angga",
+      "familyOccupation": "Product Designer"
+    }
 }
 
