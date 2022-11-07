@@ -1,0 +1,176 @@
+{
+  "hero": {
+    "travelers": 80409,
+    "treasure": 882,
+    "cities": 1492
+  },
+  "mostPicked": [
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Jung Hook Sie",
+      "type": "Apartement",
+      "imageUrl": "/images/most-picked-besar.jpg",
+      "country": "South Korea",
+      "city": "Seoul Flore",
+      "price": "80",
+      "unit": "night"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "name": "The People House",
+      "type": "Hotel",
+      "imageUrl": "/images/most-picked-kecil.jpg",
+      "country": "Indonesia",
+      "city": "Bogor",
+      "price": "52",
+      "unit": "night"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "name": "House Tour",
+      "type": "Rumah",
+      "imageUrl": "/images/most-picked-kecil.jpg",
+      "country": "South Korea",
+      "city": "Bogor",
+      "price": "80",
+      "unit": "night"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Jung Hook Sie",
+      "type": "Apartement",
+      "imageUrl": "/images/most-picked-kecil.jpg",
+      "country": "South Korea",
+      "city": "Seoul Flore",
+      "price": "80",
+      "unit": "night"
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Jung Hook Sie",
+      "type": "Apartement",
+      "imageUrl": "/images/most-picked-kecil.jpg",
+      "country": "South Korea",
+      "city": "Seoul Flore",
+      "price": "80",
+      "unit": "night"
+    }
+  ],
+  "categories": [
+    {
+      "_id": "asd1293uasdads1",
+      "name": "House with beauty backyard",
+      "items": [
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": true
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Kuretakeso",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "_id": "asd1293uasdads1",
+      "name": "House with large living room",
+      "items": [
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Kuretakeso",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": true
+        }
+    ]
+},
+    {
+      "_id": "asd1293uasdads1",
+      "name": "Apartement with kitchen set",
+      "items": [
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "Kuretakeso",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": true
+        },
+        {
+          "_id": "asd1293uasdads1",
+          "name": "PSW Antasari",
+          "imageUrl": "/images/img-categories2.jpg",
+          "country": "South Korea",
+          "city": "Seoul Flore",
+          "isPopular": false
+        }
+      ]
+    }
+    ]
+}
+

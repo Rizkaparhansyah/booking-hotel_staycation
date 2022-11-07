@@ -27,9 +27,7 @@ export default function Button(props) {
       </span>
     );
   }
-
-  if (props.type === "link") {
-    if (props.isExternal) {
+  if (props.type === "link" || 'link') {
       return (
         <a
           href={props.href}
@@ -41,16 +39,7 @@ export default function Button(props) {
           {props.children}
         </a>
       );
-    } else {
-      <Link
-        to={props.href}
-        className={className.join(" ")}
-        style={props.style}
-        onClick={onClick}
-      >
-        {props.children}
-      </Link>;
-    }
+    
   }
 
   return (
@@ -64,7 +53,7 @@ export default function Button(props) {
   );
 }
 Button.propTypes = {
-  type: propTypes.oneOf(["button", "link"]),
+  type: propTypes.oneOf(["button", "link" || 'button', 'link']),
   onClick: propTypes.func,
   target: propTypes.string,
   href: propTypes.string,

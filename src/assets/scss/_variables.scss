@@ -36,7 +36,7 @@ $grays: map-merge(
 $blue:    #007bff !default;
 $indigo:  #3253df !default;
 $purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$pink:    #ff498b !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
@@ -385,7 +385,7 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-y:         .500rem !default;
 $input-btn-padding-x:         .75rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;

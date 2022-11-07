@@ -5,7 +5,7 @@ import BrandIcon from "./IconText";
 export default function Header(props) {
 
   const getNavLinkClass = path => {
-    return props.locations.pathname === path ? "active" : "";
+    return props.location === path ? "active" : "";
   }
 
   return (
@@ -16,32 +16,26 @@ export default function Header(props) {
 
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${getNavLinkClass("/")}`}>
-                <Button className="nav-link" type="link" to="/">
+              <li className={`nav-item ${getNavLinkClass("/")}`}>
+                <Button className="nav-link" type="link" href="/">
                   Home
                 </Button>
               </li>
-            </ul>
 
-            <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${getNavLinkClass("/browse-by")}`}>
-                <Button className="nav-link" type="link" to="/browse-by">
+              <li className={`nav-item ${getNavLinkClass("/browse-by")}`}>
+                <Button className="nav-link" type="link" href="/browse-by">
                   Browse by
                 </Button>
               </li>
-            </ul>
 
-            <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${getNavLinkClass("/stories")}`}>
-                <Button className="nav-link" type="link" to="/stories">
+              <li className={`nav-item ${getNavLinkClass("/stories")}`}>
+                <Button className="nav-link" type="link" href="/stories">
                   Stories
                 </Button>
               </li>
-            </ul>
 
-            <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${getNavLinkClass("/agents")}`}>
-                <Button className="nav-link" type="link" to="/agents">
+              <li className={`nav-item ${getNavLinkClass("/agents")}`}>
+                <Button className="nav-link" type="link" href="/agents">
                   Agents
                 </Button>
               </li>
