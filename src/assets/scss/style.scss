@@ -4,7 +4,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import "functions";
 @import "colorVariable";
 @import "variables";
@@ -205,4 +205,34 @@ section {
 .testimonial-hero, .testimonial-hero img{
   width: 365px;
   height: 500px;
+}
+
+footer{
+  border-top: 1px solid $gray-200;
+  padding-top: 50px;
+
+  .brand-tagline{
+    color: $gray-500;
+    font-weight: 300;
+    margin-top: 8px;
+  }
+
+  .list-group-item{
+    padding: 0.3125rem 0;
+    border: 0;
+    a, span {
+      color: $gray-500;
+      font-weight: 300;
+    }
+    a{
+      @include hover-focus {
+        color: $gray-800;
+      }
+    }
+  }
+  .copyrights{
+    margin: 50px 0;
+    font-weight: 300;
+    color: $gray-500;
+  }
 }

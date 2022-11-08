@@ -6,6 +6,9 @@ import Categories from "parts/Categories"
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import landingPage from "json/landingPage.json"
 import Testimony from "parts/Testimony";
+import Footer from "parts/Footer";
+import { Fade } from "react-reveal";
+
 export default class LandingPage extends Component {
 
   constructor(props){
@@ -22,6 +25,7 @@ export default class LandingPage extends Component {
       <Categories data={landingPage.categories} />
 
       <Testimony data={landingPage.testimonial}/>
+      <Footer/>
 
       </div>
       );
