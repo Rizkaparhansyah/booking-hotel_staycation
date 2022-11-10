@@ -1,0 +1,153 @@
+{
+"_id": "asd1293uasdads1",
+"name": "Village Angga",
+"type": "Hotel",
+"imageUrls": [
+    {
+        "_id": "asd1293uasdads1",
+        "url": "/images/image-detail-big.jpg"
+    },
+    {
+
+        "_id": "asd1293uasdads1",
+        "url": "/images/image-detail-small.jpg"
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "url": "/images/image-detail.jpg"
+    }
+],
+"country": "Indonesia",
+"city": "Bogor",
+"price": "52",
+"unit": "night",
+"isPopular": true,
+"hasBackyard": true,
+"description": "<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>",
+"features":[
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"2",
+        "name": "bedroom",
+        "imageUrl":"/images/ic_bedroom.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"2",
+        "name": "living room",
+        "imageUrl":"/images/ic_living.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"2",
+        "name": "bath room",
+        "imageUrl":"/images/ic_bathroom.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"1",
+        "name": "dining room",
+        "imageUrl":"/images/ic_diningroom.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"30",
+        "name": "mbps",
+        "imageUrl":"/images/ic_wifi.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"1",
+        "name": "unit",
+        "imageUrl":"/images/ic_unit.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"2",
+        "name": "Television",
+        "imageUrl":"/images/ic_tv.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "qty":"2",
+        "name": "refrigerator",
+        "imageUrl":"/images/ic_refrigerator.svg"
+    }
+],
+"activities":[
+    {
+        "_id":"asd1293uasdads1",
+        "type":"Hotel",
+        "name": "bedroom",
+        "imageUrl":"/images/icons/ic_bedroom.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "type":"Hotel",
+        "name": "bedroom",
+        "imageUrl":"/images/icons/ic_bedroom.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "type":"Hotel",
+        "name": "bedroom",
+        "imageUrl":"/images/icons/ic_bedroom.svg"
+    },
+    {
+        "_id":"asd1293uasdads1",
+        "type":"Hotel",
+        "name": "bedroom",
+        "imageUrl":"/images/icons/ic_bedroom.svg"
+    }
+],
+"categories":[
+    {
+        "_id":"asd1293uasdads1",
+        "name": "Treasure to choise",
+        "items":[
+            {
+                "_id":"asd1293uasdads1",
+                "name": "bedroom",
+                "imageUrl":"/images/img-categories.jpg",
+                "country":"South Korea",
+                "city": "Seoul Flore",
+                "isPopular" : false
+            },
+            {
+                "_id":"asd1293uasdads1",
+                "name": "bedroom",
+                "imageUrl":"/images/img-categories2.jpg",
+                "country":"South Korea",
+                "city": "Seoul Flore",
+                "isPopular" : false
+            },
+            {
+                "_id":"asd1293uasdads1",
+                "name": "bedroom",
+                "imageUrl":"/images/img-categories.jpg",
+                "country":"South Korea",
+                "city": "Seoul Flore",
+                "isPopular" : true
+            },
+            {
+                "_id":"asd1293uasdads1",
+                "name": "bedroom",
+                "imageUrl":"/images/img-categories2.jpg",
+                "country":"South Korea",
+                "city": "Seoul Flore",
+                "isPopular" : false
+            }
+        ]
+    }
+],
+"testimonial":{
+    "_id":"asd1293uasdads1",
+    "imageUrl": "/images/testimonial.jpg",
+    "name": "Happy Family",
+    "rate": 4,
+    "content": "What a great trip with my family and i should try again next time soon ...",
+    "familyName": "Angga",
+    "familyOccupation": "Product Designer"
+  }
+}
+

@@ -7,6 +7,22 @@ export default function Header(props) {
     return props.location === path ? " active" : "";
   };
 
+  if (props.isCentered) {
+    return(
+      <Fade>
+        <header className="spacing-sm">
+          <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light">
+              <Button className="brand-text-icon mx-auto" href="" type="link">
+                Stay<span className="text-gray-900">cation.</span>
+              </Button>
+            </nav>
+          </div>
+        </header>
+      </Fade>
+    )
+  }
+
   return (
     <Fade>
       <header className="spacing-sm">

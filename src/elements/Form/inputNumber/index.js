@@ -8,17 +8,12 @@ export default function Number(props) {
   const [InputValue, setInputValue] = useState(`${prefix}${value}${suffix}`);
   const onChange = (e) => {
     let value = String(e.target.value);
-    if (prefix) value = value.replace(prefix);
-    if (suffix) value = value.replace(suffix);
-
-    const patternNumeric = new RegExp("[0-9]*");
-    const isNumeric = patternNumeric.test(value);
-
-    if (isNumeric && +value <= max && +value >= min) {
+   
+    if (+value <= max && +value >= min) {
       props.onChange({
         target: {
           name: name,
-          value: +value,
+          value: +value
         },
       });
       setInputValue(
@@ -32,7 +27,7 @@ export default function Number(props) {
       onChange({
         target: {
           name: name,
-          value: +value - 1,
+          value: +value - 1
         },
       });
   };
@@ -42,7 +37,7 @@ export default function Number(props) {
       onChange({
         target: {
           name: name,
-          value: +value + 1,
+          value: +value + 1
         },
       });
   };
