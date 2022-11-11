@@ -14,7 +14,7 @@ export default function File(props) {
   } = props;
 
   const refInputFile = useRef(null);
-  
+
   return (
     <div className={["input-text mb-3", outerClassName].join(" ")}>
       <div className="input-group">
@@ -23,29 +23,27 @@ export default function File(props) {
             <span className="input-group-text">{prepend}</span>
           </div>
         )}
-        ;
         <input
-        accept={accept}
-        ref={refInputFile}
+          accept={accept}
+          ref={refInputFile}
           name={name}
           type="file"
           className="d-none"
           value={value}
-          placeholder={placeholder}
           onChange={props.onChange}
         />
         <input
           onClick={() => refInputFile.current.click()}
           defaultValue={value}
           placeholder={placeholder}
-          className={["form-control",inputClassName].join(" ")}
+          className={["form-control", inputClassName].join(" ")}
         />
         {append && (
           <div className="input-group-append bg-gray-900">
             <span className="input-group-text">{append}</span>
           </div>
         )}
-        </div>
+      </div>
     </div>
   );
 }
@@ -59,8 +57,8 @@ File.propTypes = {
   accept: propTypes.string.isRequired,
   value: propTypes.string.isRequired,
   onChange: propTypes.func.isRequired,
-  prepend: propTypes.one0fType([propTypes.number, propTypes.string]),
-  append: propTypes.one0fType(propTypes.number, propTypes.string),
+  prepend: propTypes.oneOfType([propTypes.number, propTypes.string]),
+  append: propTypes.oneOfType([propTypes.number, propTypes.string]),
   placeholder: propTypes.string,
   outerClassName: propTypes.string,
   inputClassName: propTypes.string,

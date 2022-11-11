@@ -28,7 +28,7 @@ export default function Text(props) {
     };
     if (type === "email") {
       if (!pattern.test(event.target.value)) setHasError(errorResponse);
-      else setHasError("");
+      else setHasError(null);
     }
     if (type === "tel") {
       if (event.target.validity.valid) props.onChange(target);
@@ -44,7 +44,6 @@ export default function Text(props) {
             <span className="input-group-text">{prepend}</span>
           </div>
         )}
-        ;
         <input
           name={name}
           type={type}
@@ -74,10 +73,10 @@ Text.defaultProps = {
 
 Text.propTypes = {
   name: propTypes.string.isRequired,
-  value: propTypes.one0fType([propTypes.number, propTypes.string]).isRequired,
+  value: propTypes.oneOfType([propTypes.number, propTypes.string]).isRequired,
   onChange: propTypes.func.isRequired,
-  prepend: propTypes.one0fType([propTypes.number, propTypes.string]),
-  append: propTypes.one0fType(propTypes.number, propTypes.string),
+  prepend: propTypes.oneOfType([propTypes.number, propTypes.string]),
+  append: propTypes.oneOfType([propTypes.number, propTypes.string]),
   type: propTypes.string,
   placeholder: propTypes.string,
   outerClassName: propTypes.string,

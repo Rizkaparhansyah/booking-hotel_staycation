@@ -26,7 +26,7 @@ export default function Numbering({ style, className, data, current }) {
 }
 
 Numbering.propTypes = {
-  data: propTypes.object,
   className: propTypes.string,
+  data: propTypes.object,
   current: propTypes.string,
 };

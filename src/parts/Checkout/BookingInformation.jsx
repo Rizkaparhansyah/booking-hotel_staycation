@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import InputText from 'elements/Form/InputText'
 
-export default function BookinInformation(props) {
+export default function BookingInformation(props) {
   const{ data, ItemDetails, checkout } = props;
 
   return (
@@ -30,7 +30,7 @@ export default function BookinInformation(props) {
                   </div>
                   <div className="col-auto">
                     <span className="text-gray-500">
-                      ${+checkout.duration} {ItemDetails.unit} USD
+                      ${+checkout.duration * ItemDetails.unit} USD
                       <span className="text-gray-500"> per </span>
                       {+checkout.duration} {ItemDetails.unit}
                       {+checkout.duration > 1 ? "s" : ""}

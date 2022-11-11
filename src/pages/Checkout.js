@@ -7,7 +7,7 @@ import Numbering from 'elements/Stepper/Numbering'
 import Meta from 'elements/Stepper/Meta'
 import MainContent from 'elements/Stepper/MainContent'
 import Controller from 'elements/Stepper/Controller'
-import BookingInformation from "parts/Checkout/BookinInformation";
+import BookingInformation from "parts/Checkout/BookingInformation";
 import Payment from "parts/Checkout/Payment";
 import Completed from "parts/Checkout/Completed";
 import ItemDetails from "json/itemDetails.json";
@@ -35,13 +35,13 @@ export default class Checkout extends Component {
   };
 
   componentDidMount() {
-    window.scroll(0.0);
+    window.scroll(0, 0);
   }
 
   render() {
     const { data } = this.state;
     const checkout = {
-      duration: 3,
+      duration: 3
     };
     const steps = {
       bookingInformation: {
@@ -74,13 +74,15 @@ export default class Checkout extends Component {
         content: <Completed />,
       },
     };
+    console.log(steps);
 
     return (
       <React.Fragment>
+      
         <Header isCentered />
         <Stepper steps={steps}>
           {
-            (prevStep, nextStep, CurrentStep, steps) => {
+            (prevStep, nextStep, CurrentStep, steps) => (
             <React.Fragment>
               <Numbering
                 data={steps}
@@ -167,8 +169,8 @@ export default class Checkout extends Component {
                   </Button>
                 </Controller>
               )}
-            </React.Fragment>;
-          }}
+            </React.Fragment>
+    )}
         </Stepper>
       </React.Fragment>
     );

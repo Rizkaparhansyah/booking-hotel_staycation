@@ -1,7 +1,7 @@
 @import "../../../assets/scss/colorVariable";
 
 $stepperMainColor: $gray-200;
-$size: 60px;
+$size: 50px;
 
 ol.stepper {
   display: flex;
@@ -17,6 +17,7 @@ ol.stepper {
     justify-content: center;
     list-style: none;
     width: $size;
+    height: $size;
     border-radius: $size;
     color: $white;
 

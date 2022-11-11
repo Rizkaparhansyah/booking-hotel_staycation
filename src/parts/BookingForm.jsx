@@ -62,14 +62,14 @@ export default class BookingForm extends Component {
 
   render() {
     const { data } = this.state;
-    const { ItemDetails, startBooking } = this.props;
+    const { itemDetails, startBooking } = this.props;
     return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
         <h4 className="mb-3">Start Booking</h4>
         <h5 className="h2 text-teal mb-4">
-          ${ItemDetails.price}{" "}
+          ${itemDetails.price}{" "}
           <span className="text-gray-500 font-weight-light">
-            per {ItemDetails.unit}
+            per {itemDetails.unit}
           </span>
         </h5>
         <label htmlFor="duration">How long you will stay?</label>
@@ -90,11 +90,11 @@ export default class BookingForm extends Component {
         >
           You will pay{" "}
           <span className="text-gray-900">
-            ${ItemDetails.price * data.duration} USD
+            ${itemDetails.price * data.duration} USD
           </span>{" "}
           per{" "}
           <span className="text-gray-900">
-            {data.duration} {ItemDetails.unit}
+            {data.duration} {itemDetails.unit}
           </span>
         </h6>
 
