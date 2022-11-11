@@ -4,7 +4,6 @@ import InputText from 'elements/Form/InputText'
 
 export default function BookingInformation(props) {
   const{ data, ItemDetails, checkout } = props;
-
   return (
     <Fade>
       <div className="container" style={{ marginBottom: 30 }}>
@@ -15,7 +14,7 @@ export default function BookingInformation(props) {
                 <figure className="img-wrapper" style={{ height: 270 }}>
                   <img
                     className="img-cover"
-                    src={ItemDetails.imageUrl[0].url}
+                    src={ItemDetails.imageUrls[0].url}
                     alt={ItemDetails.name}
                   />
                 </figure>

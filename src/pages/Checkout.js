@@ -74,7 +74,6 @@ export default class Checkout extends Component {
         content: <Completed />,
       },
     };
-    console.log(steps);
 
     return (
       <React.Fragment>
