@@ -1,12 +1,12 @@
 import Button from "elements/Button";
 import React from "react";
+import { Fade } from "react-reveal";
 import BrandIcon from "./IconText";
-import Fade from "react-reveal/Fade"
 export default function Header(props) {
   const getNavLinkClass = (path) => {
     return props.location === path ? " active" : "";
   };
-
+console.log(props.location);
   if (props.isCentered) {
     return(
       <Fade>
