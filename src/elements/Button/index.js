@@ -19,17 +19,17 @@ export default function Button(props) {
     return (
       <span className={className.join(" ")} style={props.style}>
         {props.isLoading ? (
-          <React.Fragment>
+          <>
             <span className="spiner-border spiner-border-sm mx-5"></span>
             <span className="sr-only">Loading....</span>
-          </React.Fragment>
+          </>
         ) : (
           props.children
         )}
       </span>
     );
   }
-  if (props.type === "link" || "link") {
+  if (props.type === "link" || 'link') {
     if (props.isExternal) {
       return (
         <a
@@ -67,7 +67,7 @@ export default function Button(props) {
   );
 }
 Button.propTypes = {
-  type: propTypes.oneOf(["button", "link" || "button", "link"]),
+  type: propTypes.oneOf(["button", "link" || 'button', 'link']),
   onClick: propTypes.func,
   target: propTypes.string,
   href: propTypes.string,

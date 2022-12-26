@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 import BrandIcon from "./IconText";
 export default function Header(props) {
   const getNavLinkClass = (path) => {
-    return props.location === path ? " active" : "";
+    return props.pathname === path ? " active" : "";
   };
 console.log(props.location);
   if (props.isCentered) {
