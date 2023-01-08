@@ -11,7 +11,6 @@ export default function Hero(props) {
       behavior: "smooth",
     });
   }
-
   function numberFormat(number){
     const formatNumbering = new Intl.NumberFormat("id-ID");
     return formatNumbering.format(number);
@@ -40,27 +39,27 @@ export default function Hero(props) {
           </Button>
           <div className="row " style={{marginTop: 82}}>
             <div className="col-auto " style={{ marginRight: 35 }}>
-              <img src="assets/images/icons/ic_traveler.svg" width="36" height="36" alt={`${props.data.travelers}`} />
+              <img src="images/ic_traveler.svg" width="36" height="36" alt=""/>
               <h6 className="mt-3">
-                {numberFormat(props.data.travelers)}
+                {numberFormat(props.data.travelers)}{" "}
                 <span className="text-gray-500 font-weight-light ">
                   traveler
                 </span>
               </h6>
             </div>
             <div className="col-auto " style={{ marginRight: 35 }}>
-              <img src="assets/images/icons/ic_treasure.svg" width="36" height="36" alt="Treasure" />
+              <img src="images/ic_treasure.svg" width="36" height="36" alt="Treasure" />
               <h6 className="mt-3">
-              {numberFormat(props.data.treasure)}
+              {numberFormat(props.data.treasures)}{" "}
                 <span className="text-gray-500 font-weight-light ">
                   treasure
                 </span>
               </h6>
             </div>
             <div className="col-auto " style={{}}>
-              <img src="assets/images/icons/ic_cities.svg" width="36" height="36" alt="Cities" />
+              <img src="images/ic_cities.svg" width="36" height="36" alt="Cities" />
               <h6 className="mt-3">
-              {numberFormat(props.data.cities)}
+              {numberFormat(props.data.cities)}{" "}
                 <span className="text-gray-500 font-weight-light ">cities</span>
               </h6>
             </div>

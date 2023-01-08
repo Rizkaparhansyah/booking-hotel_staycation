@@ -17,26 +17,27 @@ export default function MostPicked(props) {
                 <Fade bottom delay={500*index}>
                   <div className="card card-featured">
                     <div className="tag">
-                      ${item.price}
+                      ${item.price}{" "}
                       <span className="font-wight-light">per {item.unit}</span>
                     </div>
                     <figure className="img-wrapper">
                       <img
                         className="img-cover"
-                        src={item.imageUrl}
-                        alt={item.name}
+                        src={`${process.env.REACT_APP_HOST}/${item.imageId[0].imageUrl}`}
+                        alt={item.title}
                       />
                     </figure>
                     <div className="meta-wrapper">
                       <Button
                         className="stretched-link d-block text-white"
                         type="link"
-                        href={`/properties/${item.id}`}
+                        href={`/properties/${item._id}`}
                       >
-                        <h5>{item.name}</h5>
+                        <h5>{item.title}</h5>
                       </Button>
                       <span>
                         {item.city}
+                        {", "}
                         {item.country}
                       </span>
                     </div>

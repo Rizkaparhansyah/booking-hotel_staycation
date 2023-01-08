@@ -14,14 +14,14 @@ export default function BookingInformation(props) {
                 <figure className="img-wrapper" style={{ height: 270 }}>
                   <img
                     className="img-cover"
-                    src={ItemDetails.imageUrls[0].url}
-                    alt={ItemDetails.name}
+                    src={`${process.env.REACT_APP_HOST}/${ItemDetails.imageId[0].imageUrl}`}
+                    alt={ItemDetails.title}
                   />
                 </figure>
                 <div className="row align-items-center">
                   <div className="col">
                     <div className="meta-wrapper">
-                      <h5> {ItemDetails.name}</h5>
+                      <h5> {ItemDetails.title}</h5>
                       <span className="text-gray-500">
                         {ItemDetails.city},{ItemDetails.country}
                       </span>
@@ -29,7 +29,7 @@ export default function BookingInformation(props) {
                   </div>
                   <div className="col-auto">
                     <span className="text-gray-500">
-                      ${+checkout.duration * ItemDetails.unit} USD
+                      ${+checkout.duration * ItemDetails.price} USD
                       <span className="text-gray-500"> per </span>
                       {+checkout.duration} {ItemDetails.unit}
                       {+checkout.duration > 1 ? "s" : ""}
